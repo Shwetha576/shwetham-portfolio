@@ -2,46 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System - Dark theme with dark green accents
+/* Portfolio Design System - Dark theme with dark blue accents
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 183 16% 11%;
+    --background: 220 13% 9%;
     --foreground: 0 0% 90%;
 
-    --card: 183 16% 11%;
+    --card: 220 13% 9%;
     --card-foreground: 0 0% 90%;
 
-    --popover: 183 16% 11%;
+    --popover: 220 13% 9%;
     --popover-foreground: 0 0% 90%;
 
-    --primary: 180 25% 25%;
+    --primary: 220 100% 25%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 180 35% 35%;
+    --primary-glow: 220 100% 35%;
 
-    --secondary: 183 16% 15%;
+    --secondary: 220 13% 15%;
     --secondary-foreground: 0 0% 88%;
 
-    --muted: 183 16% 15%;
+    --muted: 220 13% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 180 25% 25%;
+    --accent: 220 100% 25%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 183 16% 20%;
-    --input: 183 16% 15%;
-    --ring: 180 25% 25%;
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 220 100% 25%;
 
     /* Portfolio specific colors */
-    --portfolio-bg: 183 16% 11%;
-    --portfolio-surface: 183 16% 15%;
-    --portfolio-accent: 180 25% 25%;
-    --portfolio-accent-hover: 180 35% 35%;
+    --portfolio-bg: 220 13% 9%;
+    --portfolio-surface: 220 13% 12%;
+    --portfolio-accent: 220 100% 25%;
+    --portfolio-accent-hover: 220 100% 35%;
     --portfolio-text: 0 0% 90%;
     --portfolio-text-muted: 0 0% 65%;
 
