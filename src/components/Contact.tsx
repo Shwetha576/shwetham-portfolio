@@ -20,19 +20,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Mail className="w-5 h-5" />,
+      icon: <Mail className="w-4 h-4 sm:w-5 h-5" />,
       label: 'Email',
       value: 'shwetham2023@example.com',
       href: 'mailto:shwetham2023@example.com'
     },
     {
-      icon: <Phone className="w-5 h-5" />,
+      icon: <Phone className="w-4 h-4 sm:w-5 h-5" />,
       label: 'Phone',
       value: '+91 7358749296',
       href: 'tel:+917358749296'
     },
     {
-      icon: <MapPin className="w-5 h-5" />,
+      icon: <MapPin className="w-4 h-4 sm:w-5 h-5" />,
       label: 'Location',
       value: 'India',
       href: null
@@ -41,13 +41,13 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: <Github className="w-6 h-6" />,
+      icon: <Github className="w-5 h-5 sm:w-6 h-6" />,
       label: 'GitHub',
       href: 'https://github.com/Shwetha576',
       color: 'hover:text-gray-400'
     },
     {
-      icon: <Linkedin className="w-6 h-6" />,
+      icon: <Linkedin className="w-5 h-5 sm:w-6 h-6" />,
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/shwetha-m-87aba6337',
       color: 'hover:text-blue-400'
@@ -125,9 +125,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="py-20 bg-portfolio-bg relative overflow-hidden">
+    <section id="contact" ref={sectionRef} className="py-12 sm:py-16 lg:py-20 bg-portfolio-bg relative overflow-hidden">
       {/* Animated Background Wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 opacity-10">
+      <div className="absolute bottom-0 left-0 right-0 h-24 sm:h-32 opacity-10">
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
@@ -142,41 +142,41 @@ const Contact = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-portfolio-accent mb-4">
+        <div className={`text-center mb-10 sm:mb-12 lg:mb-16 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-portfolio-accent mb-3 sm:mb-4">
             Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto mb-6" />
-          <p className="text-lg text-portfolio-text-muted max-w-2xl mx-auto">
+          <div className="w-20 sm:w-24 h-1 bg-gradient-primary mx-auto mb-4 sm:mb-6" />
+          <p className="text-base sm:text-lg text-portfolio-text-muted max-w-xl sm:max-w-2xl mx-auto">
             Ready to start your next project? Let's discuss how we can work together.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {/* Contact Information */}
           <div className={`${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
-            <div className="bg-portfolio-surface rounded-xl p-8 border border-portfolio-accent/20 h-full">
-              <h3 className="text-2xl font-bold text-portfolio-text mb-8">Contact Information</h3>
+            <div className="bg-portfolio-surface rounded-xl p-6 sm:p-8 border border-portfolio-accent/20 h-full">
+              <h3 className="text-xl sm:text-2xl font-bold text-portfolio-text mb-6 sm:mb-8">Contact Information</h3>
               
-              <div className="space-y-6 mb-8">
+              <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center group">
-                    <div className="flex-shrink-0 w-12 h-12 bg-portfolio-accent/10 rounded-lg flex items-center justify-center group-hover:bg-portfolio-accent/20 transition-colors">
+                    <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-portfolio-accent/10 rounded-lg flex items-center justify-center group-hover:bg-portfolio-accent/20 transition-colors">
                       <div className="text-portfolio-accent">
                         {info.icon}
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <div className="text-sm text-portfolio-text-muted">{info.label}</div>
+                    <div className="ml-3 sm:ml-4">
+                      <div className="text-xs sm:text-sm text-portfolio-text-muted">{info.label}</div>
                       {info.href ? (
                         <a
                           href={info.href}
-                          className="text-portfolio-text hover:text-portfolio-accent transition-colors font-medium"
+                          className="text-sm sm:text-base text-portfolio-text hover:text-portfolio-accent transition-colors font-medium"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <div className="text-portfolio-text font-medium">{info.value}</div>
+                        <div className="text-sm sm:text-base text-portfolio-text font-medium">{info.value}</div>
                       )}
                     </div>
                   </div>
@@ -184,16 +184,16 @@ const Contact = () => {
               </div>
 
               {/* Social Links */}
-              <div className="border-t border-portfolio-accent/20 pt-8">
-                <h4 className="text-lg font-semibold text-portfolio-text mb-4">Follow Me</h4>
-                <div className="flex space-x-4">
+              <div className="border-t border-portfolio-accent/20 pt-6 sm:pt-8">
+                <h4 className="text-base sm:text-lg font-semibold text-portfolio-text mb-3 sm:mb-4">Follow Me</h4>
+                <div className="flex space-x-3 sm:space-x-4">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`w-12 h-12 bg-portfolio-accent/10 rounded-lg flex items-center justify-center text-portfolio-text-muted hover:bg-portfolio-accent hover:text-white transition-all duration-300 hover:scale-110`}
+                      className={`w-10 h-10 sm:w-12 sm:h-12 bg-portfolio-accent/10 rounded-lg flex items-center justify-center text-portfolio-text-muted hover:bg-portfolio-accent hover:text-white transition-all duration-300 hover:scale-110`}
                       aria-label={social.label}
                     >
                       {social.icon}
@@ -201,32 +201,18 @@ const Contact = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Quick Message */}
-              <div className="mt-8 p-6 bg-portfolio-bg rounded-lg border border-portfolio-accent/10">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-portfolio-accent mt-0.5 flex-shrink-0" />
-                  <div>
-                    <h5 className="text-portfolio-text font-medium mb-1">Quick Response</h5>
-                    <p className="text-portfolio-text-muted text-sm">
-                      I typically respond to emails within 24 hours. For urgent matters, 
-                      feel free to call me directly.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className={`${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-            <div className="bg-portfolio-surface rounded-xl p-8 border border-portfolio-accent/20">
-              <h3 className="text-2xl font-bold text-portfolio-text mb-8">Send a Message</h3>
+            <div className="bg-portfolio-surface rounded-xl p-6 sm:p-8 border border-portfolio-accent/20">
+              <h3 className="text-xl sm:text-2xl font-bold text-portfolio-text mb-6 sm:mb-8">Send a Message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-portfolio-text mb-2">
+                    <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-portfolio-text mb-1 sm:mb-2">
                       Name *
                     </label>
                     <Input
@@ -236,12 +222,12 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent"
+                      className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent text-sm sm:text-base"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-portfolio-text mb-2">
+                    <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-portfolio-text mb-1 sm:mb-2">
                       Email *
                     </label>
                     <Input
@@ -251,14 +237,14 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent"
+                      className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent text-sm sm:text-base"
                       placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-portfolio-text mb-2">
+                  <label htmlFor="subject" className="block text-xs sm:text-sm font-medium text-portfolio-text mb-1 sm:mb-2">
                     Subject *
                   </label>
                   <Input
@@ -268,13 +254,13 @@ const Contact = () => {
                     required
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent"
+                    className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent text-sm sm:text-base"
                     placeholder="Project inquiry, collaboration, etc."
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-portfolio-text mb-2">
+                  <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-portfolio-text mb-1 sm:mb-2">
                     Message *
                   </label>
                   <Textarea
@@ -283,8 +269,8 @@ const Contact = () => {
                     required
                     value={formData.message}
                     onChange={handleInputChange}
-                    rows={6}
-                    className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent resize-none"
+                    rows={5}
+                    className="bg-portfolio-bg border-portfolio-accent/30 text-portfolio-text focus:border-portfolio-accent resize-none text-sm sm:text-base"
                     placeholder="Tell me about your project or how I can help you..."
                   />
                 </div>
@@ -292,16 +278,16 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-portfolio-accent hover:bg-portfolio-accent-hover text-white py-3 font-semibold transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-portfolio-accent hover:bg-portfolio-accent-hover text-white py-2 sm:py-3 font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center justify-center">
-                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                      <div className="w-4 h-4 sm:w-5 sm:h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
                       Sending...
                     </div>
                   ) : (
                     <div className="flex items-center justify-center">
-                      <Send size={18} className="mr-2" />
+                      <Send size={16} className="mr-2" />
                       Send Message
                     </div>
                   )}

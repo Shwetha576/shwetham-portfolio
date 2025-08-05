@@ -1,6 +1,6 @@
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import shwethaHeadshot from '@/assets/shwetha-headshot.jpg';
+import shwethaM from '@/assets/shwethaM.jpg';
 
 const Hero = () => {
   const scrollToPortfolio = () => {
@@ -30,13 +30,13 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
           {/* Profile Image */}
-          <div className="mb-6 sm:mb-8 flex justify-center">
+          <div className="mb-6 sm:mb-8 flex justify-center m-20">
             <div className="relative">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full bg-portfolio-accent/20 border-4 border-portfolio-accent shadow-glow animate-float flex items-center justify-center">
-                <div className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-portfolio-accent font-bold">
-                  S
-                </div>
-              </div>
+              <img
+                src={shwethaM}
+                alt="Shwetha M Headshot"
+                className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full bg-portfolio-accent/20 border-4 border-portfolio-accent shadow-glow animate-float object-cover"
+              />
               <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-10 animate-glow" />
             </div>
           </div>
@@ -50,7 +50,7 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-portfolio-accent mb-4 sm:mb-6 font-semibold px-4">
-            Full-Stack Developer
+            Student & Full-Stack Developer
           </h2>
           
           <p className="text-base sm:text-lg md:text-xl text-portfolio-text-muted max-w-2xl lg:max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed px-4">
