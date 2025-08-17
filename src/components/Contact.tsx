@@ -22,8 +22,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-4 h-4 sm:w-5 h-5" />,
       label: 'Email',
-      value: 'shwetham2023@example.com',
-      href: 'mailto:shwetham2023@example.com'
+      value: 'shwetham2023@gmail.com',
+      href: 'mailto:shwetham2023@gmail.com'
     },
     {
       icon: <Phone className="w-4 h-4 sm:w-5 h-5" />,
