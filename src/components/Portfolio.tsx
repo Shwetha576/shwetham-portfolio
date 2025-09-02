@@ -63,24 +63,24 @@ const Portfolio = () => {
       githubLink: 'https://github.com/Shwetha576/gallerysample',
       demoLink: 'http://gallery-sample.shwetha-m.in/'
     },
-    {
-      id: 4,
-      title: 'Amazon Clone',
-      description: 'A visually stunning and responsive e-commerce website clone built using HTML & CSS',
-      longDescription: 'This project is a clone of the Amazon website, featuring a similar layout and design. Using HTML & CSS, it replicates the look and feel of the original site.',
-      technologies: ['HTML', 'CSS'],
-      period: 'December 2023 - January 2024',
-      features: [
-        'Responsive grid layout for all screen sizes',
-        'Smooth hover effects and transitions',
-        'Semantic HTML structure for accessibility',
-        'Custom CSS styling for a modern aesthetic'
-      ],
-      icon: <ImageIcon className="w-5 h-5 sm:w-6 h-6" />,
-      gradient: 'from-pink-500 to-orange-600',
-      githubLink: 'https://github.com/Shwetha576/amazon-clone',
-      demoLink: 'https://amazonclone.shwetha-m.in/'
-    }
+    // {
+    //   id: 4,
+    //   title: 'Amazon Clone',
+    //   description: 'A visually stunning and responsive e-commerce website clone built using HTML & CSS',
+    //   longDescription: 'This project is a clone of the Amazon website, featuring a similar layout and design. Using HTML & CSS, it replicates the look and feel of the original site.',
+    //   technologies: ['HTML', 'CSS'],
+    //   period: 'December 2023 - January 2024',
+    //   features: [
+    //     'Responsive grid layout for all screen sizes',
+    //     'Smooth hover effects and transitions',
+    //     'Semantic HTML structure for accessibility',
+    //     'Custom CSS styling for a modern aesthetic'
+    //   ],
+    //   icon: <ImageIcon className="w-5 h-5 sm:w-6 h-6" />,
+    //   gradient: 'from-pink-500 to-orange-600',
+    //   githubLink: 'https://github.com/Shwetha576/amazon-clone',
+    //   demoLink: 'https://amazonclone.shwetha-m.in/'
+    // }
   ];
 
   useEffect(() => {
